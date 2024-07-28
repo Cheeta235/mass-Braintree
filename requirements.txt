@@ -1,4 +1,13 @@
+pycountry
+jwt
+re
 flagz
+random
+time
+string
+base64
+bs4
+BeautifulSoup
 openai==0.28.0
 Faker==24.4.0
 about-time==4.2.1
