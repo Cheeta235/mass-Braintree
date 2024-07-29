@@ -349,7 +349,7 @@ def menu_callback(call):
 						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @cheetax1')
 						return
 					try:
-						data = requests.get('https://lookup.binlist.net/'+cc[:6]).json()
+						binn = requests.get(f'https://bins.antipublic.cc/bins/{bin[:6]}')
 						
 					except:
 						pass
@@ -553,7 +553,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 		last = str(Tele(cc))
 	except Exception as e:
 		last='Error'
-	try: data = requests.get('https://bins.antipublic.cc/bins/'+cc[:6]).json()
+	try: binn = requests.get(f'https://bins.antipublic.cc/bins/{bin[:6]}')
 	except: pass
 	try:
 		brand = data['brand']
@@ -789,7 +789,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 			last='Authenticate Frictionless Failed'
 	except Exception as e:
 		last='Error'
-	try: data = requests.get('https://bins.antipublic.cc/bins/'+cc[:6]).json()
+	try: binn = requests.get(f'https://bins.antipublic.cc/bins/{bin[:6]}')
 	except: pass
 	try:
 		brand = data['brand']
