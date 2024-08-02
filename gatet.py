@@ -196,13 +196,13 @@ opflash73%7C1723603056%7CXRvwlCwAJxfR8sfgETT8BmFxFPwT3DQ1d68tQasmEqN%7C9e361bc8a
     elif 'risk_threshold' in text:
       result = "Gateway Rejected: Risk Threshold"
     elif 'Please wait for 20 seconds.' in text:
-      result = "Wait for 20 Sec"
+      result = "{risk BKL}"
     else:
       result = "Declined"
       print('er#')
-  if 'avs' in result or '1000: Approved' in result or 'Duplicate' in result or 'Low Funds' in result:
+  if 'avs' in result or '1000: Approved' in result or 'Duplicate' in result or 'Insufficient Funds' in result:
      return 'Approved'
   else:
      return result
 def sq(card):
-  return 'Dev @HitlerxPapaa'
+  return 'So ja BKL'
