@@ -226,12 +226,12 @@ def menu_callback(call):
 						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @cheetax1')
 						return
 					try:
-						binn = requests.get(f'https://bins.antipublic.cc/bins/{cc[:6]}')
+						data = requests.get('https://bins.antipublic.cc/bins/{cc[:6]}').json()
 						
 					except:
 						pass
 					try:
-						bank=(data['bank']['name'])
+						bank = data['bank']
 					except:
 						bank=('𝒖𝒏𝒌𝒏𝒐𝒘𝒏')
 					try:
