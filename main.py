@@ -309,7 +309,7 @@ def menu_callback(call):
 						bot.send_message(call.from_user.id, msgc)
 					else:
 						dd += 1
-					time.sleep(24)
+					time.sleep(11)
 		except Exception as e:
 			print(e)
 		stopuser[f'{id}']['status'] = 'start'
