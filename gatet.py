@@ -18,6 +18,8 @@ def Tele(ccx):
     first_line = file.readline()
   while True:
     lines = '''graymiran%7C1724561971%7CXIAcUQBkZYdmNeq8WTkQTNSyvd7fkwMievCspe5IztU%7C08a418f0892f328a9c6d3559d6fa22988fe0b2657f7cd47ebbb5b85695edd04c
+new53663%7C1724572045%7C0QvmF6SDLgrfa3sYhb03gvlJeuHXDTUZ3d08jlH9uRL%7C994dc700db04a474b29c16491fba32906e749095f4a3b09ad97edc60ba0ac760
+new6969%7C1724570682%7Cjru2Qkxi3fIYc1kLdX2K1LPfVf2QG0anxjqB1VBL2OX%7C4ef370801c102f2c3ef835f1042d32c400b7acdc25b4852c9dabd110c05284c1
 cheetah100%7C1724520371%7CjxZMQmIX2qulTooK5U5zJS4teiiepgn84A6vTXJtYJh%7C61a19322f5207b366f0a2532594701a5240a1c0aaab92c2b5a35ec423917fff4'''
     lines = lines.strip().split('\n')
     random_line_number = random.randint(0, len(lines) - 1)
