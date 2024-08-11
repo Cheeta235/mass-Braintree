@@ -18,8 +18,8 @@ def Tele(ccx):
     first_line = file.readline()
   while True:
     lines = '''cheetahx5%7C1724097658%7C0HsdEMCiNRcCcmGLqyKk0llPg4uDaowZzmBvW18ROdx%7C55d36e2f043656acc27f4970d435b2a05048eb745bce9e1369bd961ad87c4605
-    hitlerpapa12%7C1723634676%7C7LwuTmzr1JchHE7RJHYbiHmxFuwgyCu0MwUTsDWGE6n%7Cec7ee1820e0a0fdc66fbd9493e18df6c4ab27d0a58ac858856f9f06ce04357ed
-    opflash73%7C1723603056%7CXRvwlCwAJxfR8sfgETT8BmFxFPwT3DQ1d68tQasmEqN%7C9e361bc8a3f23bc0b5919aa4f6b51e214b0010d378c71795ed184035bc4b0dab'''
+cheetah5%7C1724517222%7C3jMg8phlFUnChKM1HtrHquceuNEa4BFEr1VwjkwV9Y3%7Cd92143f1bfbf6852f8c0cd43cc7732dac0b5cd632a3deeed0c6df87e7ed0e869
+cheetahnew67%7C1724518022%7CBRQKjHEqaa3rmwiRzfKQP6oTYlfX30ZMITUujpJY3Tl%7C856d285157fbb80eb544dcd46487855dfa2e6e9815fe0436ad598a4899bcdaa7'''
     lines = lines.strip().split('\n')
     random_line_number = random.randint(0, len(lines) - 1)
     big = lines[random_line_number]
